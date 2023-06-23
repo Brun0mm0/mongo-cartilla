@@ -17,6 +17,17 @@ mongoose
     }).then(() => { console.log(`DB connection success!! 👍`)
         }).catch(err=>console.log(err))
 
+
+
+// const datos = new Tour({
+//     name:'The Ocean Adventure',
+//     price: 460
+// })
+
+// datos.save().then(doc => {
+//     console.log(doc);
+// }).catch(err=> console.log(`ERROR 💩 `, err))
+
 const port = process.env.PORT;
 app.listen(port, ()=>{
     console.log(`App running on ${port} 👋 ...`)
